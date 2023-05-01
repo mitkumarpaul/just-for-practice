@@ -10,7 +10,8 @@ jobs:
    
     steps:
       - checkout
-      - run: open ./index.html
+      - run: npm install 
+      - run: npm run index.html
       
   test:
     working_directory: ~/just-for-practice 
