@@ -10,10 +10,7 @@ jobs:
    
     steps:
       - checkout
-      - run:
-          name: Update NPM
-          command: "sudo npm install -g npm"
-      - run: npm run index.html
+      - run: chromium index.html
       
   test:
     working_directory: ~/just-for-practice 
