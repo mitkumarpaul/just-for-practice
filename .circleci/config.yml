@@ -10,7 +10,9 @@ jobs:
    
     steps:
       - checkout
-      - run: npm install 
+      - run:
+          name: Update NPM
+          command: "sudo npm install -g npm"
       - run: npm run index.html
       
   test:
