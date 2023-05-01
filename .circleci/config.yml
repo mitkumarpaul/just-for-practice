@@ -11,7 +11,20 @@ jobs:
     steps:
       - checkout
       - run: index.html
-
+      
+  test:
+     working_directory: ~/just-for-practice 
+    docker:
+      - image: cimg/base:stable
+   
+    steps:
+      - checkout
+      - run: index.html
+    
 workflows:
+  build_and_test:
     jobs:
       - build
+      - test:
+        requires:
+          - build
