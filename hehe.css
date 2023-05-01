@@ -1,0 +1,31 @@
+body
+{
+    background-image: url('abcd.png');
+    background-size: cover;
+}
+
+.style1
+{
+    text-align: center;
+    color: #e692b4;
+    font-size: 75px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    position: relative;
+    top: 20px;
+}
+
+p
+{
+    text-align: center;
+    color: #e692b4;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    line-height: 10px;
+}
+
+form
+{
+    text-align: center;
+}
