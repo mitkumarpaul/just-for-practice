@@ -10,7 +10,7 @@ jobs:
    
     steps:
       - checkout
-      - run: xdg-open index.html
+      - run: xdg-open ~/just-for-practice/index.html
       
   test:
     working_directory: ~/just-for-practice 
@@ -19,7 +19,7 @@ jobs:
    
     steps:
       - checkout
-      - run: xdg-open index.html
+      - run: ~/just-for-practice/index.html
     
 workflows:
   build_and_test:
