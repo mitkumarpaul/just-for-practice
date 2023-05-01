@@ -13,7 +13,7 @@ jobs:
       - run: index.html
       
   test:
-     working_directory: ~/just-for-practice 
+    working_directory: ~/just-for-practice 
     docker:
       - image: cimg/base:stable
    
@@ -26,5 +26,5 @@ workflows:
     jobs:
       - build
       - test:
-        requires:
-          - build
+          requires:
+            - build
