@@ -10,21 +10,12 @@ jobs:
    
     steps:
       - checkout
-      - run: chromium index.html
-      
-  test:
-    working_directory: ~/just-for-practice 
-    docker:
-      - image: cimg/base:stable
-   
-    steps:
-      - checkout
-      - run: open ./index.html
+      - run: npm install
+      - run: npm run test
+
     
 workflows:
   build_and_test:
     jobs:
       - build
-      - test:
-          requires:
-            - build
+      
