@@ -154,7 +154,7 @@ function App() {
         DEL
       </button>
       <OperationButton operation="÷" dispatch={dispatch} />
-      <DigitButton digit="1" dispatch={dispatch} />
+      <DigitButton digit="0000" dispatch={dispatch} />
       <DigitButton digit="2" dispatch={dispatch} />
       <DigitButton digit="3" dispatch={dispatch} />
       <OperationButton operation="*" dispatch={dispatch} />
