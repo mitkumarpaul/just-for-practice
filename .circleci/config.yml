@@ -6,7 +6,7 @@ jobs:
     # creates a directory in the docker image
     working_directory: ~/just-for-practice 
     docker:
-      - image: cimg/base:stable
+      - image: cimg/node:19.9.0
    
     steps:
       - checkout
